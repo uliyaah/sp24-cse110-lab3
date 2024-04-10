@@ -8,37 +8,48 @@
   <body>
     <main>
         <header>
-            <h1>h1</h1>
-            <h2>h2</h2>
-            <h3>h3</h3>
+            <h1>Lab 2 - Meeting Minutes</h1>
+            <h2>10 Apr. 2024</h2>
+            <h4>Attendance: Uliyaah Dionisio</h4>
         </header>
+        <h3><strong>Agenda</strong></h3>
         <ol>
             <li>Coffee</li>
             <li>Tea</li>
             <li>Milk</li>
         </ol>
-          
+        <h3><em>Notes</em></h3>
         <ul>
-            <li>Coffee</li>
-            <li>Tea</li>
-            <li>Milk</li>
+            <li><span>Lorem ipsum dolor sit amet,</span> consectetur adipisicing elit.  </li>
+            <li>Accusantium rem velit <b>temporibus</b> sunt praesentium minima, rerum unde provident aliquam.</li>
+            <li>Itaque, architecto <i>quisquam</i> soluta incidunt eum nam dignissimos veritatis corporis voluptatum.</li>
         </ul>
         <section>
             <h2>Action Items</h2>
             <div>
                 <p><input type="checkbox" /> Complete Part 1 of Lab</p>
                 <p><input type="checkbox" /> Complete Part 2 of Lab</p>
-                <p><input type="checkbox" /> <span style="color:darkred">Submit</span> Lab</p>
+                <p><input type="checkbox" /> <a href="https://www.gradescope.com/courses/760672">Submit Lab</a></p>
             </div>
         </section>
         <div>
             <h3>Images and multimedia</h3>
-            <img href="./screenshots/Screen Shot 2024-04-10 at 12.56.38 PM.png" alt="Screenshot of Passed W3 check">
-            <audio>Audio recording of meeting</audio>
-            <video>Video recording of meeting</video>
+            <img href="./screenshots/W3Check.png" alt="Screenshot of Passed W3 check">
+            <br>
+            <audio alt="Audio of meeting" controls>
+                <source src="https://cpa.ds.npr.org/s227/audio/2022/07/augmentedhumanity-prog037-seg01.mp3">
+                Your browser does not support the audio tag.
+            </audio>
+            <video alt="Video of meeting" width="320" height="240" controls>
+                <source src="https://cpa.ds.npr.org/s227/audio/2022/07/augmentedhumanity-prog037-seg01.mp3">
+                Your browser does not support the video tag.
+              </video>
         </div>
-        <details></details>
-        <summary></summary>
+        <details>
+            <summary>Summary</summary>
+            <p><summary>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti natus perferendis error laborum! Necessitatibus, et, voluptatibus veniam repellat qui voluptatem distinctio quos saepe ea dicta sit eveniet ratione assumenda maxime.</summary></p>
+        </details>
+        
 
     </main>
     <hr>
@@ -51,15 +62,34 @@
       </footer>
     <hr>
     <div>
-        <h3>Form</h3>
-        <form></form>
-        <fieldset></fieldset>
-        <input/>
-        <textarea></textarea>
-        <datalist></datalist>
-        <select></select>
-        <option></option>
-        <button>Submit</button>
+        <form>
+            <fieldset>
+                <legend><h3>Contact Form:</h3></legend>
+                <label for="fname">First name:</label>
+                <input type="text">
+                <label for="lname">Last name:</label>
+                <input type="text"><br><br>
+                
+                <textarea>Type a message</textarea>
+                <br>
+                <label>Reason for message</label>
+                <select>
+                    <option>Question</option>
+                    <option>Mistake</option>
+                    <option>Other</option>
+                </select>
+                <br><br>
+                <label>Relating to:</label>
+                <input list="topics">
+                <datalist id="topics">
+                    <option>Notes</option>
+                    <option>Attendance</option>
+                    <option>Details</option>
+                </datalist><br><br>            
+                <button>Submit</button>
+            </fieldset>
+        </form>
+        
     </div>
 
   </body>
