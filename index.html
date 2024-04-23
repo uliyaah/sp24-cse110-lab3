@@ -11,8 +11,12 @@
             color: #2b2d2b; /* dark green text color */
         }
     
-        h1, h2, h3, h4, h5, h6 {
+        h1, h2, h3 {
             color: #2b2d2b; /* dark green text color for headings */
+        }
+
+        h4 {
+            color: color(display-p3 0.4 .09 0.5); /* red color using sRGB color space */
         }
     
         a {
@@ -23,8 +27,7 @@
         /* Example: color(colorspace c1 c2 c3[ / A]) */
         
         p {
-            color: (display-p3 0.9 .01 0.4); /* red color using sRGB color space */
-            background-color: color-mix(complement, #ff0000 50%, #0000ff 50%); /* mix red and blue */
+            color: color-mix(in lch, plum, darkred); /* mix plum and maroon */
         }
     
     </style>
