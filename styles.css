@@ -1,0 +1,99 @@
+:root {
+    --main-color: #e8ebe5; /* Default color: red */
+}
+body {
+    background-color: var(--main-color, skyblue); /* fallback is skyblue */
+    color: #2b2d2b; /* dark green text color */
+    font-family: 'Roboto', sans-serif;
+    margin-left: 10vw;
+}
+
+h1, h2, h3 {
+    color: #2b2d2b; /* dark green text color for headings */
+    padding: 1em .1em .1em .1em;
+}
+
+h4 {
+    color: color(display-p3 0.4 .09 0.5); /* purple */
+}
+
+a {
+    color: teal; /* blue link color */
+    text-decoration:none ;
+    text-align: left;
+}
+
+a:hover{
+    color: brown;
+    text-decoration: underline;
+}
+button:active{
+    background-color: blue;
+}
+
+p {
+    color: color-mix(in lch, plum, darkred); /* mix plum and maroon */
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 2em;
+    padding-right: 1em;
+}
+
+.longbox {
+    margin-top: 10px;
+    margin-bottom:10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.shortbox{
+    margin: 10vh, 10vh, 10vw,10vw;
+    padding:10px 150px 10px 10px;
+    border-style:dotted;
+    border-color: palevioletred;
+    border-width:.2em;
+    border-radius: 2em;
+    display: inline-table;
+    height: fit-content;
+    width: 50vw;
+    max-width:200vw;
+    min-width: 30vw;
+    position: static;
+    
+
+}
+
+.autobox{
+    margin: auto;
+    
+}
+
+.agenda{
+    position: relative;
+    top: 5px; 
+    left: 40px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.item {
+    flex: 1 1 70%; /* Minimum width of 30%, can grow and shrink */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2em;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+    }
+}
