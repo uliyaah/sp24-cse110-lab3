@@ -15,6 +15,7 @@
     
         h1, h2, h3 {
             color: #2b2d2b; /* dark green text color for headings */
+            padding: 1em .1em .1em .1em;
         }
 
         h4 {
@@ -23,10 +24,39 @@
     
         a {
             color: teal; /* blue link color */
+            text-decoration:none ;
+            text-align: left;
         }
         
         p {
             color: color-mix(in lch, plum, darkred); /* mix plum and maroon */
+            padding-top: .5em;
+            padding-bottom: .5em;
+            padding-left: 2em;
+            padding-right: 1em;
+        }
+
+        .longbox {
+            margin-top: 10px;
+            margin-bottom:10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            
+        }
+
+        .shortbox{
+            margin: 10vh, 10vh, 10vw,10vw;
+            padding:10px 10px 10px 10px;
+            border-style:dotted;
+            border-color: palevioletred;
+            border-width:2px;
+            border-radius: 2em;
+            display: inline-table;
+        }
+
+        .autobox{
+            margin: auto;
+            display: none;
         }
     
     </style>
@@ -53,13 +83,13 @@
         </ul>
         <section>
             <h2>Action Items</h2>
-            <div>
+            <div class="longbox">
                 <p><input type="checkbox"> Complete Part 1 of Lab</p>
                 <p><input type="checkbox"> Complete Part 2 of Lab</p>
                 <p><input type="checkbox"> <a href="https://www.gradescope.com/courses/760672">Submit Lab</a></p>
             </div>
         </section>
-        <div>
+        <div class="shortbox">
             <h3>Images and multimedia</h3>
             <h4>W3 Markup Validation Report</h4>
             <img src="./screenshots/W3Check.png" alt="Screenshot of Passed W3 check" width="500">
@@ -71,7 +101,7 @@
             </audio>
             <br>
             <h4>Sample video from geeksforgeeks</h4>
-            <video width="320" controls>
+            <video width="320" controls style="border-radius: 2em;">
                 <source src="https://media.geeksforgeeks.org/wp-content/uploads/20210314115545/sample-video.mp4">
                 Your browser does not support the video tag.
               </video>
@@ -93,7 +123,7 @@
         </nav>
     </footer>
     <hr>
-    <div>
+    <div class="autobox">
         <form>
             <fieldset>
                 <legend><h3>Contact Form:</h3></legend>
