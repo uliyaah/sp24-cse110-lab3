@@ -27,6 +27,7 @@
             text-decoration:none ;
             text-align: left;
         }
+ 
         
         p {
             color: color-mix(in lch, plum, darkred); /* mix plum and maroon */
@@ -56,11 +57,19 @@
             width: 50vw;
             max-width:200vw;
             min-width: 30vw;
+            position: static;
+        
         }
 
         .autobox{
             margin: auto;
-            display: none;
+            
+        }
+
+        .agenda{
+            position: relative;
+            top: 5px; 
+            left: 40px;
         }
     
     </style>
@@ -73,12 +82,15 @@
             <h2>10 Apr. 2024</h2>
             <h4>Attendance: Uliyaah Dionisio</h4>
         </header>
-        <h3><strong>Agenda</strong></h3>
-        <ol>
-            <li>Read documentation</li>
-            <li>Start Lab</li>
-            <li>Double check lab submission</li>
-        </ol>
+        <div class="agenda">
+            <h3><strong>Agenda</strong></h3>
+            <ol>
+                <li>Read documentation</li>
+                <li>Start Lab</li>
+                <li>Double check lab submission</li>
+            </ol>
+        </div>
+        
         <h3><em>Notes</em></h3>
         <ul>
             <li><span>Lorem ipsum dolor sit amet,</span> consectetur adipisicing elit.  </li>
@@ -119,7 +131,7 @@
     </main>
     <hr>
     <footer>
-        <p>Author: Uliyaah Dionisio</p>
+        <p style="display: none;">Author: Uliyaah Dionisio</p>
         <nav>
             <a href="mailto:udionisio@ucsd.edu">udionisio@ucsd.edu</a> |
             <a href="https://github.com/uliyaah/Lab2_Starter">Github Repo</a> |
